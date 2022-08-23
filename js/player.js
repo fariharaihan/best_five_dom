@@ -8,18 +8,22 @@ function selectedBest(players) {
     playerList.innerText = '';
 
 
+
     for (let i = 0; i < players.length; i++) {
         const name = bestPlayers[i].selectPlayerName;
 
         const ol = document.createElement('li');
-        ol.innerText = name;
+        ol.innerText = name
+
         playerList.appendChild(ol);
 
         if (i >= 4) {
             alert('Only five Players are allowed');
             return;
         }
+
     }
+
 }
 function selectPlayer(element) {
 

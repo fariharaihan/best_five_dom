@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Your players</title>
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- tailwindcss link -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -17,10 +19,12 @@
             <div>
                 <img src="images/Mask Group.png" alt="">
             </div>
-            <div>
-                <h1 class="text-5xl font-extrabold text-orange-400 pt-10 px-12">Select Your Special Five Pleyers</h1>
-                <p class="text-white px-12 pt-14 text-2xl ">This is the top players list. You can select best five
-                    players from here.
+            <div class=" px-12">
+                <h1 class="text-5xl font-extrabold text-orange-400 pt-10">Select Your Special Five Pleyers</h1>
+                <p class="text-white  pt-14 text-2xl ">This is the our top players list. They are very responsible
+                    to
+                    their duties. <br> You can select our best
+                    five players from here.
                 </p>
             </div>
             <div>
@@ -42,7 +46,7 @@
                             <img src="images/Rectangle 144.png" alt="">
                         </div>
                         <div class="bg-black text-center">
-                            <h1 class="text-3xl font-semibold py-8  text-white">Lionel Messi</h1>
+                            <h2 class="text-3xl font-semibold py-8  text-white">Lionel Messi</h2>
                             <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
                                     Assist</span></h5>
                             <button onclick="selectPlayer(this)"
@@ -55,7 +59,7 @@
                             <img src="images/Rectangle 144 (1).png" alt="">
                         </div>
                         <div class="bg-black text-center">
-                            <h1 class="text-3xl font-semibold py-8  text-white">Neymar Jr</h1>
+                            <h2 class="text-3xl font-semibold py-8  text-white">Neymar Jr</h2>
                             <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
                                     Assist</span></h5>
                             <button onclick="selectPlayer(this)"
@@ -68,7 +72,7 @@
                             <img src="images/Rectangle 144 (2).png" alt="">
                         </div>
                         <div class="bg-black text-center">
-                            <h1 class="text-3xl font-semibold py-8  text-white">Kylian Mbappé</h1>
+                            <h2 class="text-3xl font-semibold py-8  text-white">Kylian Mbappé</h2>
                             <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
                                     Assist</span></h5>
                             <button onclick="selectPlayer(this)"
@@ -81,7 +85,7 @@
                             <img src="images/Rectangle 144 (3).png" alt="">
                         </div>
                         <div class="bg-black text-center">
-                            <h1 class="text-3xl font-semibold py-8  text-white">Vítor Machado</h1>
+                            <h2 class="text-3xl font-semibold py-8  text-white">Vítor Machado</h2>
                             <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
                                     Assist</span></h5>
                             <button onclick="selectPlayer(this)"
@@ -94,7 +98,7 @@
                             <img src="images/Rectangle 144 (4).png" alt="">
                         </div>
                         <div class="bg-black text-center">
-                            <h1 class="text-3xl font-semibold py-8  text-white">Sergio Ramos</h1>
+                            <h2 class="text-3xl font-semibold py-8  text-white">Sergio Ramos</h2>
                             <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
                                     Assist</span></h5>
                             <button onclick="selectPlayer(this)"
@@ -107,7 +111,7 @@
                             <img src="images/Rectangle 144 (5).png" alt="">
                         </div>
                         <div class="bg-black text-center">
-                            <h1 class="text-3xl font-semibold py-8  text-white">Renato Sanches</h1>
+                            <h2 class="text-3xl font-semibold py-8  text-white">Renato Sanches</h2>
                             <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
                                     Assist</span></h5>
                             <button onclick="selectPlayer(this)"
@@ -119,13 +123,9 @@
             <!-- selected players -->
             <div class="w-1/4 mr-12">
                 <div class="bg-black py-8 w-64">
-                    <h2 class="text-white text-3xl font-semibold text-center ">Selected - V</h2>
-                    <ol id="selected-player" class="text-white py-6 font-medium pl-7">
-                        <li class="pt-5"></li>
-                        <li class="pt-5"></li>
-                        <li class="pt-5"></li>
-                        <li class="pt-5"></li>
-                        <li class="pt-5"></li>
+                    <h3 class="text-white text-3xl font-medium text-center ">Selected - V</h3>
+                    <ol id="selected-player" class="text-white py-12 pl-8">
+
                     </ol>
                 </div>
                 <!-- players budget part -->
@@ -138,7 +138,8 @@
                     </div>
                     <button id="calculate-btn"
                         class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">Calculate</button>
-                    <p class="text-white pr-8">Player Expenses $<span id="player-total-expense"></span></p>
+
+                    <p class="text-white pr-8">Player Expenses ---- $<span id="player-total-expense"></span></p>
                     <div class="flex pt-5">
                         <p class="text-white pr-8">Manager</p>
                         <input id="maneger-cost" class="border-2 bg-black w-28 text-white" type="text"
@@ -152,7 +153,9 @@
                     <button id="calculate-btn-total"
                         class="bg-sky-600 px-14 py-2 my-6 font-semibold text-white">Calculate
                         Total</button>
-                    <p class="text-white pr-8">Total <span id="total-expence"></span></p>
+                    <p class="text-white pr-8 ">Total Exprnses ---- $<span id="total-expence"
+                            class="text-orange-400"></span></p>
+
                 </div>
             </div>
         </section>
