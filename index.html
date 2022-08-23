@@ -133,21 +133,26 @@
                     <h2 class="text-white text-3xl font-semibold text-center ">Budget</h2>
                     <div class="flex pt-5">
                         <p class="text-white pr-8">Per Player</p>
-                        <input class="border-2 bg-black w-28 text-white" type="text" placeholder="Enter Amount">
+                        <input id="per-player-amount" class="border-2 bg-black w-28 text-white" type="text"
+                            placeholder="Enter Amount">
                     </div>
-                    <button class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">Calculate</button>
-                    <p class="text-white">Player Expenses <span class="pl-8">$</span></p>
+                    <button id="calculate-btn"
+                        class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">Calculate</button>
+                    <p class="text-white pr-8">Player Expenses $<span id="player-total-expense"></span></p>
                     <div class="flex pt-5">
                         <p class="text-white pr-8">Manager</p>
-                        <input class="border-2 bg-black w-28 text-white" type="text" placeholder="Enter Amount">
+                        <input id="maneger-cost" class="border-2 bg-black w-28 text-white" type="text"
+                            placeholder="Enter Amount">
                     </div>
                     <div class="flex pt-5">
                         <p class="text-white pr-8">Coach</p>
-                        <input class="border-2 bg-black w-28 text-white" type="text" placeholder="Enter Amount">
+                        <input id="coach-cost" class="border-2 bg-black w-28 text-white" type="text"
+                            placeholder="Enter Amount">
                     </div>
-                    <button class="bg-sky-600 px-14 py-2 my-6 font-semibold text-white">Calculate
+                    <button id="calculate-btn-total"
+                        class="bg-sky-600 px-14 py-2 my-6 font-semibold text-white">Calculate
                         Total</button>
-                    <p class="text-white pr-8">Coach</p>
+                    <p class="text-white pr-8">Total <span id="total-expence"></span></p>
                 </div>
             </div>
         </section>
@@ -160,6 +165,7 @@
     </footer>
     <!-- footer part end -->
     <script src="js/player.js"></script>
+    <script src="js/calculator.js"></script>
 </body>
 
 </html>
