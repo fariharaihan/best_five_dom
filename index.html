@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Your players</title>
-    <!-- css style sheet -->
+    <!-------- css style sheet --------->
     <link rel="stylesheet" href="styles/style.css">
-    <!-- tailwindcss link -->
+    <!------- tailwindcss link ------->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-zinc-900">
-    <!-- header part start -->
+    <!-------- header part start ------------>
     <header>
         <section class="bg-black flex mt-8 pt-20">
             <div>
@@ -28,32 +28,32 @@
                 </p>
             </div>
             <div>
-                <img class="w-20" src="images/photo_2022-05-02_10-07-10.png" alt="">
+                <img class="w-24" src="images/photo_2022-05-02_10-07-10.png" alt="">
             </div>
         </section>
     </header>
-    <!-- header part end -->
-    <!-- main part start -->
+    <!----------- header part end -------------->
+    <!------------ main part start ------------->
     <main>
         <section class="container mx-auto mt-16 mb-32 flex">
-            <!-- player part -->
+            <!----- player part ----->
             <div class="w-3/4 ml-16">
-                <!-- player cards part -->
+                <!----- player cards part ----->
                 <div class="grid grid-cols-3 gap-x-1 gap-y-6">
-                    <!-- player--1  -->
+                    <!-------- player: 1 -------->
                     <div class="w-64 border-2 border-slate-700	">
                         <div>
                             <img src="images/Rectangle 144.png" alt="">
                         </div>
                         <div class="bg-black text-center">
                             <h2 class="text-3xl font-semibold py-8  text-white">Lionel Messi</h2>
-                            <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
+                            <h5 class="text-white font-normal">40 Goals <span>.</span> <span>124
                                     Assist</span></h5>
-                            <button onclick="selectPlayer(this)"
-                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">SELECT</button>
+                            <button onclick="addToList(this)"
+                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white disabled-btn">SELECT</button>
                         </div>
                     </div>
-                    <!-- player--2  -->
+                    <!-------- player: 2 -------->
                     <div class="w-64 border-2 border-slate-700">
                         <div>
                             <img src="images/Rectangle 144 (1).png" alt="">
@@ -62,78 +62,78 @@
                             <h2 class="text-3xl font-semibold py-8  text-white">Neymar Jr</h2>
                             <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
                                     Assist</span></h5>
-                            <button onclick="selectPlayer(this)"
-                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">SELECT</button>
+                            <button onclick="addToList(this)"
+                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white disabled-btn">SELECT</button>
                         </div>
                     </div>
-                    <!-- player--3  -->
+                    <!-------- player: 3 -------->
                     <div class="w-64 border-2 border-slate-700">
                         <div>
                             <img src="images/Rectangle 144 (2).png" alt="">
                         </div>
                         <div class="bg-black text-center">
                             <h2 class="text-3xl font-semibold py-8  text-white">Kylian Mbappé</h2>
-                            <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
+                            <h5 class="text-white font-normal">32 Goals <span>.</span> <span>118
                                     Assist</span></h5>
-                            <button onclick="selectPlayer(this)"
-                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">SELECT</button>
+                            <button onclick="addToList(this)"
+                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white disabled-btn">SELECT</button>
                         </div>
                     </div>
-                    <!-- player--4  -->
+                    <!-------- player: 4 -------->
                     <div class="w-64 border-2 border-slate-700">
                         <div>
                             <img src="images/Rectangle 144 (3).png" alt="">
                         </div>
                         <div class="bg-black text-center">
                             <h2 class="text-3xl font-semibold py-8  text-white">Vítor Machado</h2>
-                            <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
+                            <h5 class="text-white font-normal">34 Goals <span>.</span> <span>122
                                     Assist</span></h5>
-                            <button onclick="selectPlayer(this)"
-                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">SELECT</button>
+                            <button onclick="addToList(this)"
+                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white disabled-btn">SELECT</button>
                         </div>
                     </div>
-                    <!-- player--5  -->
+                    <!-------- player: 5 -------->
                     <div class="w-64 border-2 border-slate-700">
                         <div>
                             <img src="images/Rectangle 144 (4).png" alt="">
                         </div>
                         <div class="bg-black text-center">
                             <h2 class="text-3xl font-semibold py-8  text-white">Sergio Ramos</h2>
-                            <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
+                            <h5 class="text-white font-normal">42 Goals <span>.</span> <span>126
                                     Assist</span></h5>
-                            <button onclick="selectPlayer(this)"
-                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">SELECT</button>
+                            <button onclick="addToList(this)"
+                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white disabled-btn">SELECT</button>
                         </div>
                     </div>
-                    <!-- player--6  -->
+                    <!-------- player: 6 -------->
                     <div class="w-64 border-2 border-slate-700">
                         <div>
                             <img src="images/Rectangle 144 (5).png" alt="">
                         </div>
                         <div class="bg-black text-center">
                             <h2 class="text-3xl font-semibold py-8  text-white">Renato Sanches</h2>
-                            <h5 class="text-white font-normal">36 Goals <span>.</span> <span>112
+                            <h5 class="text-white font-normal">30 Goals <span>.</span> <span>110
                                     Assist</span></h5>
-                            <button onclick="selectPlayer(this)"
-                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white">SELECT</button>
+                            <button onclick="addToList(this)"
+                                class="bg-sky-600 px-20 py-2 my-6 font-semibold text-white disabled-btn">SELECT</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- selected players -->
+            <!--------- selected players list ------------>
             <div class="w-1/4 mr-12">
                 <div class="bg-black py-8 w-64">
                     <h3 class="text-white text-3xl font-medium text-center ">Selected - V</h3>
-                    <ol id="selected-player" class="text-white py-12 pl-8">
+                    <ul id="selected-player" class="text-white py-12 pl-8">
 
-                    </ol>
+                    </ul>
                 </div>
-                <!-- players budget part -->
+                <!------------- players budget part ------------>
                 <div class="bg-black py-8 w-64 mt-6 px-4">
                     <h2 class="text-white text-3xl font-semibold text-center ">Budget</h2>
                     <div class="flex pt-5">
                         <p class="text-white pr-8">Per Player</p>
-                        <input id="per-player-amount" class="border-2 bg-black w-28 text-white" type="text"
+                        <input id="per-player-amount" class="border-2 bg-black w-28 px-1 text-white" type="text"
                             placeholder="Enter Amount">
                     </div>
                     <button id="calculate-btn"
@@ -142,12 +142,12 @@
                     <p class="text-white pr-8">Player Expenses ---- $<span id="player-total-expense"></span></p>
                     <div class="flex pt-5">
                         <p class="text-white pr-8">Manager</p>
-                        <input id="maneger-cost" class="border-2 bg-black w-28 text-white" type="text"
+                        <input id="maneger-cost" class="border-2 bg-black w-28 text-white px-1" type="text"
                             placeholder="Enter Amount">
                     </div>
                     <div class="flex pt-5">
                         <p class="text-white pr-8">Coach</p>
-                        <input id="coach-cost" class="border-2 bg-black w-28 text-white" type="text"
+                        <input id="coach-cost" class="border-2 bg-black w-28 text-white px-1" type="text"
                             placeholder="Enter Amount">
                     </div>
                     <button id="calculate-btn-total"
@@ -160,15 +160,14 @@
             </div>
         </section>
     </main>
-    <!-- main part end -->
+    <!------- main part end ----------->
     <hr>
-    <!-- footer part start -->
+    <!------------ footer part start --------->
     <footer>
         <p class="text-white font-normal py-12 text-center">Copyright @ 2022 All Rights Reserved</p>
     </footer>
-    <!-- footer part end -->
+    <!-------- footer part end ------------>
     <script src="js/player.js"></script>
-    <script src="js/calculator.js"></script>
 </body>
 
 </html>

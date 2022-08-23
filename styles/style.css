@@ -3,3 +3,8 @@
 h1 {
     font-family: 'Berkshire Swash', cursive;
 }
+
+.disabled-btn[disabled] {
+    background-color: #666666;
+    color: #cccccc;
+}
