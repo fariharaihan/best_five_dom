@@ -13,7 +13,6 @@ function selectedBest(players) {
         const ul = document.createElement('li');
         ul.innerText = name;
 
-
         playerList.appendChild(ul);
     }
 
@@ -43,11 +42,14 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const perPleyarAmountString = perPleyarfield.value;
     const perPleyarAmount = parseFloat(perPleyarAmountString);
 
+
     // const selectedPlayer = document.getElementById('selected-player')
     const playerNum = bestPlayers.length;
 
+
     const playerTotal = document.getElementById('player-total-expense');
     const playerTotalExpensestring = playerTotal.innerText;
+
 
     playerTotal.innerText = perPleyarAmount * playerNum;
     const playerTotalExpense = parseFloat(playerTotalExpensestring);
